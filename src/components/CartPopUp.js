@@ -60,7 +60,11 @@ const CartPopUp = ({
                 className={`d-flex align-items-center w-100 ${styles.cartItem}`}
               >
                 <Div className={styles.cartImage}>
-                  <img src={item.images[0].smallImage} alt={item.title} />
+                  <img
+                    width="114"
+                    src={item.images[0].smallImage}
+                    alt={item.title}
+                  />
                 </Div>
                 <Div
                   className={`d-flex align-items-center justify-content-between w-100 ${styles.cartInfo}`}
