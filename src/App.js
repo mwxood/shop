@@ -13,6 +13,7 @@ const App = () => {
   useEffect(() => {
     setCart(JSON.parse(localStorage.getItem('cart')) || []);
     console.log('cart', cart);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const shopNowHandler = () => {
