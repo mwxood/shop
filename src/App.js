@@ -34,9 +34,13 @@ const App = () => {
     setUpdateCart(false);
   };
 
+  const openCartHandler = () => {
+    setActivePopUp(true);
+  };
+
   return (
     <div className="App">
-      <Header update={cartActive} />
+      <Header update={cartActive} cartCallback={openCartHandler} />
       <ShopPage
         shopNowHandler={shopNowHandler}
         addToCartCallBack={addToCartCallBack}

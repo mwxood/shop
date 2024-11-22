@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './styles/Header.module.css';
 
-const Cart = ({ update }) => {
+const Cart = ({ update, cartCallback }) => {
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
@@ -9,7 +9,7 @@ const Cart = ({ update }) => {
   }, [update]);
 
   return (
-    <span className={`d-block ${styles.cartHolder}`}>
+    <span onClick={cartCallback} className={`d-block ${styles.cartHolder}`}>
       <img src="/images/cart_icn.svg" alt="cart" />
       {cart && cart.length ? (
         <span className={styles.cartCount}>{cart.length}</span>

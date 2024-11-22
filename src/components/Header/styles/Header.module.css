@@ -21,6 +21,7 @@
 
 .cartHolder {
   position: relative;
+  cursor: pointer;
 }
 
 .cartCount {

@@ -6,7 +6,7 @@ import Search from './Search';
 import Social from './Social';
 import styles from './styles/Header.module.css';
 
-const Header = ({ update, updateCart }) => {
+const Header = ({ update, cartCallback }) => {
   const socialLinks = [
     {
       iconUrl: `/images/facebook_icn_1.svg`,
@@ -32,7 +32,7 @@ const Header = ({ update, updateCart }) => {
           <Social socialLinks={socialLinks} className={styles.headerSocial} />
           <Div className={'d-flex justify-content-between align-items-center'}>
             <Search className="mr-24" />
-            <Cart update={update} />
+            <Cart update={update} cartCallback={cartCallback} />
           </Div>
         </Div>
 
