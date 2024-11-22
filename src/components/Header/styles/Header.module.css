@@ -1,0 +1,38 @@
+.header {
+  background-color: var(--content-bg);
+  padding: 24px 0 31px;
+  margin-bottom: 62px;
+}
+
+.topHeader {
+  margin-bottom: 63px;
+}
+
+.headerSocial {
+  margin-right: 43px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.headerWrapper {
+  max-width: 1366px;
+}
+
+.cartHolder {
+  position: relative;
+}
+
+.cartCount {
+  background-color: var(--tabs-link);
+  color: #fff;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

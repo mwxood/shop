@@ -1,0 +1,184 @@
+.popUpHolder {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.popUp {
+  background-color: white;
+  max-width: 1140px;
+  width: 100%;
+  margin: auto;
+  border-radius: 16px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 16px;
+}
+
+.popUpBody {
+  padding: 0 32px 24px;
+}
+
+.closeBtn {
+  position: absolute;
+  background-color: transparent;
+  top: -32px;
+  right: -32px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.3s;
+  &:hover {
+    transform: rotate(180deg);
+  }
+}
+
+.tabsNav {
+  border-bottom: 1px solid var(--tabs-border);
+  margin-bottom: 32px;
+  li {
+    padding-bottom: 10px;
+    margin-right: 32px;
+    cursor: pointer;
+    position: relative;
+    font-weight: 700;
+    font-size: 16px;
+    width: 50%;
+    text-align: center;
+    button {
+      border: none;
+      background-color: transparent;
+      font-weight: 700;
+      font-size: 20px;
+      color: var(--non-active);
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: var(--tabs-link);
+      width: 100%;
+      height: 1px;
+      display: none;
+    }
+    &:hover {
+      color: var(--tabs-link);
+      button {
+        color: var(--heading-color);
+      }
+      &:after {
+        display: block;
+      }
+    }
+  }
+}
+
+.active {
+  color: var(--tabs-link);
+  button {
+    color: var(--heading-color) !important;
+  }
+  &:after {
+    display: block !important;
+  }
+}
+
+.quantity {
+  color: var(--non-active);
+  button {
+    width: 44px;
+    height: 44px;
+    border-radius: 16px;
+    border: 1px solid var(---non-active);
+    background-color: transparent;
+    color: var(--non-active);
+    font-size: 24px;
+    margin: 0 8px;
+    cursor: pointer;
+  }
+}
+
+.clearBtn {
+  background-color: transparent;
+  border: none;
+  color: var(--non-active);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cartImage {
+  margin-right: 32px;
+}
+
+.itemTitleHolder {
+  h4 {
+    font-weight: 400;
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+}
+
+.sizeHolder,
+.colorHolder {
+  font-size: 16px;
+  display: block;
+}
+
+.sizeHolder {
+  margin-bottom: 8px;
+}
+
+.sizeText {
+  color: var(--text-color);
+}
+
+@media (max-width: 1200px) {
+  .closeBtn {
+    top: -32px;
+    right: 0;
+  }
+}
+
+@media (max-width: 903px) {
+  .itemTitleHolder {
+    h4 {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .itemTitleHolder {
+    h4 {
+      font-size: 24px;
+    }
+  }
+
+  .quantityHolder {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .quantityHolder {
+    width: 100%;
+  }
+
+  .cartInfo {
+    flex-wrap: wrap;
+  }
+
+  .clearBtn {
+    position: absolute;
+    top: 136px;
+    right: 16px;
+  }
+}

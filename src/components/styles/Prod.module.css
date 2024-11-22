@@ -1,0 +1,17 @@
+@media (min-width: 960px) {
+  .prodHolder {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 959px) {
+  .cardWrapper {
+    flex-wrap: wrap;
+  }
+
+  .prodHolder {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}

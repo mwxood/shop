@@ -1,0 +1,5 @@
+.contentHolder {
+  background-color: var(--content-bg);
+  padding: 40px;
+  border-radius: 16px;
+}

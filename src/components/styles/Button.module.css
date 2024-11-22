@@ -1,0 +1,28 @@
+.button {
+  max-width: 200px;
+  padding: 11px 30px;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.buttonActive {
+  background-color: var(--tabs-link);
+  color: #fff;
+}
+
+.buttonDefault {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--tabs-link);
+}
+
+@media (max-width: 1006px) {
+  .button {
+    max-width: 100%;
+    padding: 11px 20px;
+    font-size: 16px;
+  }
+}

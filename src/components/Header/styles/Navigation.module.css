@@ -1,0 +1,130 @@
+.navigationList {
+  a {
+    text-decoration: none;
+    font-size: 24px;
+    color: var(--heading-color);
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 20px;
+      background-color: var(--heading-color);
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+    &:hover {
+      &:after {
+        display: block;
+      }
+    }
+  }
+}
+
+.active {
+  a {
+    &:after {
+      display: block;
+    }
+  }
+}
+
+.navigationItem {
+  margin-right: 0;
+}
+
+.namburgerMenu {
+  position: relative;
+  height: 15px;
+  width: 30px;
+  z-index: 4;
+  cursor: pointer;
+  display: none;
+}
+
+.namburgerMenu:after,
+.namburgerMenu:before {
+  content: '';
+  background: var(--heading-color);
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  left: 0;
+  top: 0;
+  transition: all 0.3s ease;
+}
+
+.namburgerMenu:after {
+  top: 10px;
+}
+
+.activeNav .namburgerMenu:after,
+.activeNav .namburgerMenu:before {
+  background: var(--heading-color);
+}
+
+.activeNav .namburgerMenu:before {
+  transform: rotate(45deg);
+}
+
+.activeNav .namburgerMenu:after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.namburgerMenu {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navigationList {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigationItem {
+    margin-right: 80px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .navigationList {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    list-style: none;
+    position: fixed;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    transition: all 0.3s ease;
+    clip-path: circle(0%);
+
+    li {
+      width: auto;
+      text-align: center;
+      margin-top: 200px;
+      margin-right: 10px;
+    }
+  }
+
+  .namburgerMenu {
+    display: block;
+    position: relative;
+    z-index: 4;
+  }
+
+  .activeNav .navigationList {
+    clip-path: circle(100%);
+  }
+}

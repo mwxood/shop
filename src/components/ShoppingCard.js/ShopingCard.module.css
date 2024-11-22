@@ -1,0 +1,55 @@
+.pupular {
+  background-color: var(--border-color);
+  padding: 6px 21px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.popularHolder {
+  margin-bottom: 24px;
+}
+
+.heartBg {
+  background-color: var(--favorite-color);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 48px;
+  margin-bottom: 14px;
+  line-height: 1.2;
+}
+
+.reviewHolder {
+  margin-bottom: 32px;
+}
+
+.ratingHolder {
+  margin-right: 16px;
+}
+
+.ratingDescription {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .title {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 25px;
+  }
+}

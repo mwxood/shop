@@ -1,0 +1,28 @@
+.bigImageHolder {
+  margin: auto;
+  max-width: 280px;
+  img {
+    object-fit: contain;
+    width: 100%;
+  }
+}
+
+.smallGallery {
+  li {
+    width: 72px;
+
+    display: flex;
+    justify-content: center;
+    margin-right: 24px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.active {
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      height: 88px;
+    }
+  }
+}
