@@ -4,25 +4,27 @@
   img {
     object-fit: contain;
     width: 100%;
+    border-radius: 8px;
   }
 }
 
 .smallGallery {
   li {
     width: 72px;
-
     display: flex;
     justify-content: center;
     margin-right: 24px;
+    border-radius: 8px;
+    img {
+      border-radius: 8px;
+    }
 
     &:last-child {
       margin-right: 0;
     }
 
     &.active {
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      height: 88px;
+      border: 3px solid var(--border-color);
     }
   }
 }

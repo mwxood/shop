@@ -18,29 +18,24 @@ const data = [
     images: [
       {
         imageId: 1,
-        smallImage: '/images/prods/product_image.jpg',
+        smallImage: '/images/prods/product_1.webp',
         imageAlt: 'Black Valentino dress with tulle',
       },
       {
         imageId: 2,
-        smallImage: '/images/prods/product_image-s-2.jpg',
+        smallImage: '/images/prods/product_2.webp',
         imageAlt: 'Black Valentino dress with tulle',
       },
       {
         imageId: 3,
-        smallImage: '/images/prods/product_image-s-3.jpg',
+        smallImage: '/images/prods/product_3.webp',
         imageAlt: 'Black Valentino dress with tulle',
       },
       {
         imageId: 4,
-        smallImage: '/images/prods/product_image-s-4.jpg',
+        smallImage: '/images/prods/product_4.webp',
         imageAlt: 'Black Valentino dress with tulle',
       },
-      // {
-      //   imageId: 5,
-      //   smallImage: '/images/prods/product_image-s-5.jpg',
-      //   imageAlt: 'Black Valentino dress with tulle',
-      // },
     ],
     colors: [
       {
@@ -86,29 +81,24 @@ const data = [
     images: [
       {
         imageId: 1,
-        smallImage: '/images/prods/product_image.jpg',
+        smallImage: '/images/prods/product_1.webp',
         imageAlt: 'Black Valentino dress with tulle',
       },
       {
         imageId: 2,
-        smallImage: '/images/prods/product_image-s-2.jpg',
+        smallImage: '/images/prods/product_2.webp',
         imageAlt: 'Black Valentino dress with tulle',
       },
       {
         imageId: 3,
-        smallImage: '/images/prods/product_image-s-3.jpg',
+        smallImage: '/images/prods/product_3.webp',
         imageAlt: 'Black Valentino dress with tulle',
       },
       {
         imageId: 4,
-        smallImage: '/images/prods/product_image-s-4.jpg',
+        smallImage: '/images/prods/product_4.webp',
         imageAlt: 'Black Valentino dress with tulle',
       },
-      // {
-      //   imageId: 5,
-      //   smallImage: '/images/prods/product_image-s-5.jpg',
-      //   imageAlt: 'Black Valentino dress with tulle',
-      // },
     ],
     colors: [
       {
@@ -154,29 +144,24 @@ const data = [
     images: [
       {
         imageId: 1,
-        smallImage: '/images/prods/product_image.jpg',
+        smallImage: '/images/prods/product_1.webp',
         imageAlt: 'Black Valentino dress with tulle',
       },
       {
         imageId: 2,
-        smallImage: '/images/prods/product_image-s-2.jpg',
+        smallImage: '/images/prods/product_2.webp',
         imageAlt: 'Black Valentino dress with tulle',
       },
       {
         imageId: 3,
-        smallImage: '/images/prods/product_image-s-3.jpg',
+        smallImage: '/images/prods/product_3.webp',
         imageAlt: 'Black Valentino dress with tulle',
       },
       {
         imageId: 4,
-        smallImage: '/images/prods/product_image-s-4.jpg',
+        smallImage: '/images/prods/product_4.webp',
         imageAlt: 'Black Valentino dress with tulle',
       },
-      // {
-      //   imageId: 5,
-      //   smallImage: '/images/prods/product_image-s-5.jpg',
-      //   imageAlt: 'Black Valentino dress with tulle',
-      // },
     ],
     colors: [
       {
