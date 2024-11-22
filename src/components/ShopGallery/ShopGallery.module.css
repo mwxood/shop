@@ -1,5 +1,5 @@
 .bigImageHolder {
-  margin: auto;
+  margin: 0 auto 10px;
   max-width: 280px;
   img {
     object-fit: contain;

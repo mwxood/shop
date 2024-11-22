@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Div } from './Helpers/Hepleprs';
 import styles from './styles/CartPopUp.module.css';
 import Price from './Price';
+import Button from './Button';
 
 const CartPopUp = ({
   activePopUp = false,
@@ -121,6 +122,19 @@ const CartPopUp = ({
               <h3>Your cart is empty</h3>
             </Div>
           )}
+        </Div>
+
+        <Div className={`${styles.amount}`}>
+          <h4>Total amount:</h4>
+          <Price
+            className={styles.price}
+            price={cart.reduce((acc, item) => acc + item.price, 0)}
+          />
+        </Div>
+
+        <Div className={`${styles.footer} d-flex justify-content-between`}>
+          <Button>To shop</Button>
+          <Button buttonActive>Continue</Button>
         </Div>
       </Div>
     </Div>
